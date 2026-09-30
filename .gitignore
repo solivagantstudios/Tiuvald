@@ -1,0 +1,82 @@
+# ==========================================
+# Operating System & IDE Files
+# ==========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.lnk
+
+# Editor directories and files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+
+# ==========================================
+# Go & Wails Artifacts
+# ==========================================
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Wails build output
+/build/bin/
+/build/windows/icon.syso
+
+# Go workspace & vendor
+/vendor/
+go.work
+go.work.sum
+
+# Go test / coverage outputs
+*.out
+*.test
+*.prof
+
+# ==========================================
+# Frontend (Svelte / Vite / Node)
+# ==========================================
+frontend/node_modules/
+node_modules/
+
+# Production build outputs (Wails embeds this, no need to commit build folder)
+frontend/dist/
+dist/
+
+# Vite / Svelte cache
+frontend/.svelte-kit/
+.svelte-kit/
+*.tsbuildinfo
+.eslintcache
+
+# NPM / Package manager debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment & Local Configuration
+.env
+.env.local
+.env.*.local
+*.local
+
+# ==========================================
+# Tiuvald Runtime / Local User Data
+# ==========================================
+# Ensure local caches or user-added test themes don't pollute git
+/assets/Themes/custom/
+/assets/Extensions/installed/
+/cache/
+*.log
